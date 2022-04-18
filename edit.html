@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 
 <html>
-
     <head>
         <meta charset="UTF-8">
         <title>Edit Profile</title>
@@ -13,10 +12,10 @@
                 integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 		<script src="js/jquery-3.6.0.min.js"></script>
     </head>
-
     <body>
         <h1>Hello! edit your profile</h1>
         <form action="edit_server.php" method="get">
+        <div class="mb-3">
         <label class="form-label">Full Name: Gil Davidi</label>
             <input type="text" class="form-control"   name="fullName" placeholder="Your New Name">
         </div>
@@ -24,20 +23,14 @@
             <label class="form-label">Email: gildavidi75@gmail.com </label>
             <input type="email" class="form-control"   name="mail"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Your New Email"> 
         </div>
-
         <div class="mb-3">
             <label class="form-label">phone: 0528146449</label>
             <input type="tel" class="form-control"   name="phone"  placeholder="Your New phone" pattern="[0-9]{9,10}"
             title="Phone Must contain 9 or 10 numbers without hyphen"> 
         </div>
-
-
         <div class="col-12">
                 <button class="btn btn-primary" id="submit-button" type="submit" value="Send">edit</button>
         </div>
-
         </form>
-
     </body>
-
 </html>

@@ -13,8 +13,6 @@
     <body>
 
         <section>
-
-    
             <?php
 
                 $fullName = $_GET["fullName"];
