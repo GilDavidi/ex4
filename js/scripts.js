@@ -8,15 +8,14 @@ $("document").ready(() => {
             e.preventDefault();
         }
         var fullName = $('input[name="fullName"]').val();
-        var onlyChars = /^[A-Za-z ]+$/.test(fullName);
         if(fullName)
         {
-            if(!fullName.includes(" ") &&!onlyChars )
+            if(!fullName.includes(" "))
             {
-            alert("Full Name: contain only letters and at least one space");
+            alert("Full Name: must contain at least one space");
             e.preventDefault();
             }
-        }
+        } 
     })
 });
 
